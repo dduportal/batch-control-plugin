@@ -102,6 +102,7 @@ SectionTabs*Test
 [permissions and plugins]
 BuildAuthenticatorMonitorTest MatrixStrategyTest MonitorStandingPermissionGapTest
 PermissionNameTest PermissionsTest SystemBuildWarningTest
+AdminChecksTest
 Role*Test
 Strategy*Test
 # other plugins, present or absent
