@@ -2,7 +2,8 @@
 # host's file system. On macOS with Docker Desktop that file system is case-insensitive (default APFS), as on Windows
 # (NTFS): `requests/run/<id>.VALUES.xml` then resolves to the values file `<id>.values.xml`, the premise of
 # security-39 S-39-01, which the Linux volume of docker-compose.yml cannot reproduce. Used for the S-39-01 checks of
-# r17/s39.py (section P records whether the premise holds).
+# r17/s39.py (section P records whether the premise holds) and for issue #32 (r26/case_rename.py: a case-only rename
+# keeps the activation; section A records the file system kind).
 #
 #   BC_CI_FS_DIR=<empty host directory> BC_COMPOSE_EXTRA=$PWD/e2e/compose.ci-fs.yml BC_UNITS=r17-s39 e2e/ci/run.sh 1/1
 #
